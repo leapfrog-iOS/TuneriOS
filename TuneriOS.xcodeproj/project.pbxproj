@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47189CCC73A1CAEFA8AFF8F8 /* Pods_TuneriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637EE515E69A714DD836B5BA /* Pods_TuneriOS.framework */; };
 		BB1522C61EFD3CEA00DEDEA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1522C51EFD3CEA00DEDEA5 /* AppDelegate.swift */; };
 		BB1522C81EFD3CEA00DEDEA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1522C71EFD3CEA00DEDEA5 /* ViewController.swift */; };
 		BB1522CB1EFD3CEA00DEDEA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1522C91EFD3CEA00DEDEA5 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		637EE515E69A714DD836B5BA /* Pods_TuneriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuneriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E483DD5A3F0F645A34F0A1 /* Pods-TuneriOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneriOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuneriOS/Pods-TuneriOS.release.xcconfig"; sourceTree = "<group>"; };
 		BB1522C21EFD3CEA00DEDEA5 /* TuneriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuneriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1522C51EFD3CEA00DEDEA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB1522C71EFD3CEA00DEDEA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		BB1522CC1EFD3CEA00DEDEA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB1522CF1EFD3CEA00DEDEA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB1522D11EFD3CEA00DEDEA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC52A95B505AFE32D7B3DEE0 /* Pods-TuneriOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneriOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuneriOS/Pods-TuneriOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47189CCC73A1CAEFA8AFF8F8 /* Pods_TuneriOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		862C5FD8F08E70EF2B7DDF47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC52A95B505AFE32D7B3DEE0 /* Pods-TuneriOS.debug.xcconfig */,
+				94E483DD5A3F0F645A34F0A1 /* Pods-TuneriOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BB1522B91EFD3CEA00DEDEA5 = {
 			isa = PBXGroup;
 			children = (
 				BB1522C41EFD3CEA00DEDEA5 /* TuneriOS */,
 				BB1522C31EFD3CEA00DEDEA5 /* Products */,
+				862C5FD8F08E70EF2B7DDF47 /* Pods */,
+				CC551F8A3C930E24D879EEC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = TuneriOS;
 			sourceTree = "<group>";
 		};
+		CC551F8A3C930E24D879EEC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				637EE515E69A714DD836B5BA /* Pods_TuneriOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB1522D41EFD3CEA00DEDEA5 /* Build configuration list for PBXNativeTarget "TuneriOS" */;
 			buildPhases = (
+				02EF9815B8A89CA2AE438109 /* [CP] Check Pods Manifest.lock */,
 				BB1522BE1EFD3CEA00DEDEA5 /* Sources */,
 				BB1522BF1EFD3CEA00DEDEA5 /* Frameworks */,
 				BB1522C01EFD3CEA00DEDEA5 /* Resources */,
+				A6C8BFAE3898ED19D2508715 /* [CP] Embed Pods Frameworks */,
+				82339722F84C471C66C17DDD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02EF9815B8A89CA2AE438109 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		82339722F84C471C66C17DDD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuneriOS/Pods-TuneriOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6C8BFAE3898ED19D2508715 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuneriOS/Pods-TuneriOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB1522BE1EFD3CEA00DEDEA5 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		BB1522D51EFD3CEA00DEDEA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC52A95B505AFE32D7B3DEE0 /* Pods-TuneriOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 446V7WHT8W;
@@ -272,6 +348,7 @@
 		};
 		BB1522D61EFD3CEA00DEDEA5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E483DD5A3F0F645A34F0A1 /* Pods-TuneriOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 446V7WHT8W;
